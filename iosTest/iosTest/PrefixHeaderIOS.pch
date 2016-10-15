@@ -1,0 +1,39 @@
+//
+//  PrefixHeaderIOS.pch
+//  iosTest
+//
+//  Created by Aftab on 13/10/2016.
+//  Copyright © 2016 Waja Information Technologies. All rights reserved.
+//
+
+#ifndef PrefixHeaderIOS_pch
+#define PrefixHeaderIOS_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#endif
+
+
+#import "DefineMacro.h"
+#import "cellTypeButton.h"
+#import "Utilities.h"
+#import "Reachability.h"
+#import "MBProgressHUD.h"
+#import "Connection.h"
+#import "JsonParser.h"
+#import "FetchingData.h"
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "DateValidator.h"
+#endif /* PrefixHeaderIOS_pch */
